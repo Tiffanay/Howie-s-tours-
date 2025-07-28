@@ -1,153 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Howie's Tours & Beach</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    nav { background-color: #007bff; padding: 10px; text-align: center; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
     }
-    nav a:hover { text-decoration: underline; }
     header {
-      background-color: #007bff;
+      background-color: #0190ff;
       color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 10px;
     }
-    h2 { color: #007bff; padding-top: 20px; }
+    nav {
+      background-color: #005fa3;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #0074d9;
+    }
+    .container {
+      padding: 20px;
+    }
+    h2 {
+      color: #0074d9;
+    }
+    ul {
+      padding-left: 20px;
+    }
     .gallery img {
-      width: 150px;
-      margin: 10px;
-      border-radius: 8px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin: 5px;
     }
     table {
-      width: 95%;
-      margin: 0 auto;
+      width: 100%;
       border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
     }
     th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
+      padding: 10px;
+      text-align: left;
     }
-    th { background-color: #f2f2f2; }
     footer {
-      background-color: #007bff;
+      background-color: #0190ff;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 10px;
+    }
+    .whatsapp {
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <img src="logo.png" alt="Howie's Tours Logo" width="150" />
-  <h1>Welcome to Howie's Tours</h1>
-  <p>Explore Roatan with unforgettable adventures!</p>
-</header>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#packages">Packages</a>
-  <a href="#contact">Contact</a>
-  <a href="#vision">Vision & Mission</a>
-</nav>
-
-<section id="home">
-  <h2>Our Tours</h2>
-  <ul>
-    <li>ISLAND + PARK + BEACH BREAK</li>
-    <li>ISLAND + PARK + BEACH CLUB</li>
-    <li>ZIP LINE + PARK + BEACH CLUB</li>
-    <li>ISLAND + PARK + ZIP LINE</li>
-    <li>ISLAND TOUR + HORSEBACK</li>
-    <li>ZIP LINE + HORSEBACK + BEACH BREAK</li>
-    <li>ISLAND TOUR + ATV + PARK</li>
-    <li>ATV + PARK + BEACH CLUB</li>
-    <li>ISLAND + GLASSBOTTOM BOAT + PARK</li>
-    <li>ZIP LINE + GLASSBOTTOM + BEACH CLUB</li>
-    <li>ZIPLINE + ATV + HORSEBACK</li>
-    <li>ISLAND TOUR + BEACH CLUB</li>
-    <li>EAST END ADVENTURE + MANGROVE TUNNEL</li>
-    <li>WEST TO EAST FULL ISLAND TOUR</li>
-    <li>ISLAND + PARK + SNORKELING</li>
-    <li>2 SITE SNORKELING</li>
-    <li>3 SITE SNORKEL AND CRUISE</li>
-    <li>DOLPHIN ENCOUNTER</li>
-  </ul>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="IMG-20250727-WA0029.jpg" alt="Tour Group 1">
-    <img src="IMG-20250727-WA0030.jpg" alt="Tour Group 2">
-    <img src="IMG-20250727-WA0033.jpg" alt="Tour Group 3">
-    <img src="IMG-20250727-WA0035.jpg" alt="Tour Group 4">
-    <img src="IMG-20250727-WA0037.jpg" alt="Tour Group 5">
-    <img src="IMG-20250727-WA0038.jpg" alt="Tour Group 6">
-    <img src="IMG-20250727-WA0039.jpg" alt="Tour Group 7">
-    <img src="IMG-20250727-WA0040.jpg" alt="Tour Group 8">
-  </div>
-</section>
-
-<section id="packages">
-  <h2>Tour Packages & Pricing</h2>
-  <table>
-    <tr>
-      <th>Detail</th>
-      <th>Adult Price</th>
-      <th>Kids Price (6–12)</th>
-      <th>Duration</th>
-    </tr>
-    <tr>
-      <td>Chocolate Factory, Rum Company, Roatan Sign, Sloth/Monkey & Beach Break</td>
-      <td>$55</td>
-      <td>$45</td>
-      <td>3–4 hr</td>
-    </tr>
-    <tr>
-      <td>Same + Private Beach Club</td>
-      <td>$65</td>
-      <td>$50</td>
-      <td>4+ hr</td>
-    </tr>
-    <tr>
-      <td>Other Combinations</td>
-      <td>$85–$155</td>
-      <td>$70–$140</td>
-      <td>2–5 hr</td>
-    </tr>
-  </table>
-</section>
-
-<section id="vision">
-  <h2>Our Vision & Mission</h2>
-  <p><strong>Vision:</strong> To be Roatan’s top-rated tour company known for fun, safe, and personalized adventures.</p>
-  <p><strong>Mission:</strong> To make Roatan your favorite cruise port by delivering exciting, authentic, and customer-first experiences through our dedicated team and quality service.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Info</h2>
-  <p><strong>Phone:</strong> +504 8896-2738</p>
-  <p><strong>Email:</strong> hobowesley@gmail.com</p>
-  <p><strong>PayPal:</strong> hwesley2020@gmail.com</p>
-  <p><strong>Facebook:</strong> Howie’s Tours & Beach</p>
-  <p><strong>TripAdvisor / Viator / GetYourGuide:</strong> Howie’s Tours & Beach</p>
-  <p><a href="https://wa.me/50488962738" target="_blank">💬 Chat on WhatsApp</a></p>
-</section>
-
-<footer>
-  © 2025 Howie's Tours & Beach. All rights reserved.
-</footer>
-
-</body>
-</html>
+  <header>
+    <img src="Howies.logo.jpg" alt="Howie's Tours Logo" height="80" />
+    <h1>Welcome to Howie's Tours</h1>
+    <p>Explore Roatan with unforgettable adventures!</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+    <a href="#vision">Vision & Mission</a>
+  </nav>  <div class="container" id="home">
+    <h2>Our Tours</h2>
+    <ul>
+      <li>ISLAND + PARK + BEACH BREAK</li>
+      <li>ISLAND + PARK + BEACH CLUB</li>
+      <li>ZIP LINE + PARK + BEACH CLUB</li>
+      <li>ISLAND + PARK + ZIP LINE</li>
+      <li>ISLAND TOUR + HORSEBACK</li>
+      <li>ZIP LINE + HORSEBACK + BEACH BREAK</li>
+      <li>ISLAND TOUR + ATV + PARK</li>
+      <li>ATV + PARK + BEACH CLUB</li>
+      <li>ISLAND + GLASSBOTTOM BOAT + PARK</li>
+      <li>ZIP LINE + GLASSBOTTOM + BEACH CLUB</li>
+      <li>ZIPLINE + ATV + HORSEBACK</li
