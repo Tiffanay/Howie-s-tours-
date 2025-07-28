@@ -1,102 +1,119 @@
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Howie's Tours & Beach</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
     }
     header {
-      background: #007acc;
+      background-color: #007bff;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    header img {
-      height: 100px;
+    .logo {
+      max-width: 150px;
       margin-bottom: 10px;
-    }
-    section {
-      padding: 20px;
-    }
-    h2 {
-      color: #007acc;
     }
     .gallery img {
       width: 100%;
-      max-width: 400px;
-      margin: 10px;
+      height: auto;
       border-radius: 10px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    #contact {
-      background: #f0f0f0;
-      padding: 20px;
-      border-top: 2px solid #007acc;
+      margin-bottom: 15px;
     }
     .whatsapp-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #25d366;
+      background-color: #25d366;
       color: white;
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      text-decoration: none;
+      padding: 15px;
+      font-size: 24px;
+      z-index: 1000;
     }
-    #vision-mission {
-      background: #e0f3ff;
+    footer {
+      background-color: #f8f9fa;
       padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-top: 30px;
     }
   </style>
-</head>
-<body><header>
-  <img src="Howies.logo.jpg" alt="Howie's Tours & Beach Logo">
-  <h1>Welcome to Howie's Tours</h1>
-  <p>Explore Roatan with unforgettable adventures!</p>
-</header><section id="vision-mission">
-  <h2>Our Mission</h2>
-  <p>To provide fun, exciting, and personalized experiences that make Roatan every traveler’s favorite cruise destination. Our goal is to deliver safe, friendly, and unforgettable adventures with a local touch.</p>  <h2>Our Vision</h2>
-  <p>To be the most trusted and recommended tour company in Roatan, known for exceptional service and unforgettable memories.</p>
-</section><section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="IMG-20250727-WA0029.jpg" alt="Tour Image 1" />
-    <img src="IMG-20250727-WA0030.jpg" alt="Tour Image 2" />
-    <img src="IMG-20250727-WA0033.jpg" alt="Tour Image 3" />
-    <img src="IMG-20250727-WA0035.jpg" alt="Tour Image 4" />
-    <img src="IMG-20250727-WA0037.jpg" alt="Tour Image 5" />
-    <img src="IMG-20250727-WA0038.jpg" alt="Tour Image 6" />
-    <img src="IMG-20250727-WA0040.jpg" alt="Tour Image 7" />
-    <img src="IMG-20250727-WA0041.jpg" alt="Tour Image 8" />
-    <img src="IMG-20250727-WA0044.jpg" alt="Tour Image 9" />
-    <img src="IMG-20250727-WA0045.jpg" alt="Tour Image 10" />
-    <img src="IMG-20250727-WA0050.jpg" alt="Tour Image 11" />
-    <img src="IMG-20250727-WA0051.jpg" alt="Tour Image 12" />
-    <img src="IMG-20250727-WA0053.jpg" alt="Tour Image 13" />
-    <img src="IMG-20250727-WA0054.jpg" alt="Tour Image 14" />
-    <img src="IMG-20250727-WA0065.jpg" alt="Tour Image 15" />
-  </div>
-</section><section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Phone:</strong> +504 9632-9416</p>
-  <p><strong>Email:</strong> howiestoursroatan@gmail.com</p>
-  <p><strong>Facebook:</strong> <a href="https://m.facebook.com/profile.php?id=61555806932739" target="_blank">Howie's Tours & Beach</a></p>
-</section><!-- WhatsApp Chat Button --><a class="whatsapp-button" href="https://wa.me/50496329416" target="_blank" title="Chat with us on WhatsApp">
-  🛋
-</a></body>
-</html>
+</head><body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Howie's Tours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <header>
+    <img src="Howies.logo.jpg" alt="Howie's Tours Logo" class="logo">
+    <h1>Welcome to Howie's Tours</h1>
+    <p>Explore Roatan with unforgettable adventures!</p>
+  </header>  <section class="container mt-4" id="gallery">
+    <h2 class="text-center">Gallery</h2>
+    <div class="row">
+      <div class="col-md-6 gallery">
+        <img src="IMG-20250727-WA0029.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0030.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0033.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0035.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0037.jpg" alt="Tour Photo">
+      </div>
+      <div class="col-md-6 gallery">
+        <img src="IMG-20250727-WA0038.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0039.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0040.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0041.jpg" alt="Tour Photo">
+        <img src="IMG-20250727-WA0042.jpg" alt="Tour Photo">
+      </div>
+    </div>
+  </section>  <section class="container mt-4" id="packages">
+    <h2 class="text-center">Package Deals & Prices</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Beach Break Tour – $45 per person</h4>
+        <ul>
+          <li>Round-trip transportation</li>
+          <li>Beach access</li>
+          <li>Free WiFi and welcome drink</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4>Island Tour Adventure – $65 per person</h4>
+        <ul>
+          <li>Roatan sightseeing</li>
+          <li>Chocolate and rum factory stop</li>
+          <li>Shopping and scenic views</li>
+        </ul>
+      </div>
+    </div>
+  </section>  <section class="container mt-4" id="vision">
+    <h2 class="text-center">Our Mission & Vision</h2>
+    <p><strong>Mission:</strong> To make Roatan your favorite cruise port by offering fun, exciting, and personal tours led by your go-to guide, Howie.</p>
+    <p><strong>Vision:</strong> To become the most trusted and memorable tour experience in Roatan by putting our guests first and providing exceptional service every step of the way.</p>
+  </section>  <section class="container mt-4" id="contact">
+    <h2 class="text-center">Contact Us</h2>
+    <p class="text-center">📞 +504 8896-2738</p>
+    <p class="text-center">📍 Roatan, Honduras</p>
+    <p class="text-center">📧 howiestours@gmail.com</p>
+    <div class="text-center">
+      <a href="https://wa.me/50488962738" class="btn btn-success"><i class="fab fa-whatsapp"></i> Chat with us on WhatsApp</a>
+    </div>
+  </section>  <a href="https://wa.me/50488962738" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>  <footer>
+    <p>© 2025 Howie's Tours & Beach. All rights reserved.</p>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body></html>
